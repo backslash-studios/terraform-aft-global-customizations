@@ -1,0 +1,39 @@
+{
+    "__usage_docs": [
+        "https://docs.aws.amazon.com/controltower/latest/userguide/aft-account-customization-options.html",
+        "https://youtu.be/8Ot5wn7kxI0?t=1733"
+    ],
+
+  "include": [
+    {
+      "type": "all"
+    },
+    {
+      "type": "ous",
+      "target_value": ["ou1", "ou2"]
+    },
+    {
+      "type": "tags",
+      "target_value": [{ "key1": "value1" }, { "key2": "value2" }]
+    },
+    {
+      "type": "accounts",
+      "target_value": ["acc1_ID", "acc2_ID"]
+    }
+  ],
+
+  "exclude": [
+    {
+      "type": "ous",
+      "target_value": ["ou1", "ou2"]
+    },
+    {
+      "type": "tags",
+      "target_value": [{ "key1": "value1" }, { "key2": "value2" }]
+    },
+    {
+      "type": "accounts",
+      "target_value": ["acc1_ID", "acc2_ID"]
+    }
+  ]
+}
